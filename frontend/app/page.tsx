@@ -1,8 +1,14 @@
-import Head from 'next/head'
+import { Html, Head, Main, NextScript } from 'next/document'
 import Image from 'next/image';
 
 export default function Home() {
   return (
+    <Html>
+      <Head>
+        {/* Viewport Meta Tag for Responsive Design */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+</Head>
+<body>
     <div className="font-Poppins min-h-screen flex flex-col bg-gradient-to-r from-[#566FFD] to-[#F866C6]">
       <div  className="bg-gradient-to-r from-[#566FFD] to-[#F866C6]">
 
@@ -79,6 +85,7 @@ export default function Home() {
       </div>
 
     </div>
-    
+</body>
+    </Html>
   )
 }
