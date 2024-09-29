@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image';
+import About from './about'
 
 export default function Home() {
   return (
-    <div className="font-Poppins min-h-screen flex flex-col bg-gradient-to-r from-[#566FFD] to-[#F866C6]">
+    <div className="font-Poppins min-h-screen flex flex-col bg-[#DFDDE0]">
       <div  className="bg-gradient-to-r from-[#566FFD] to-[#F866C6]">
 
 
@@ -32,15 +33,16 @@ export default function Home() {
           <h1 className="text-[24px] font-bold mb-4">SET THE CHANGE IN MOTION</h1>
           <p className="text-[56px] font-bold mb-6">Secure her path to a brighter future...</p>
           <input className='width-15 rounded-s py-3'></input>
-          <button className="bg-purple-600 text-white px-6 py-3 rounded-l-none rounded-sm">Join us today</button>
+          <button className="bg-[#17D8E2] text-[#0F0F0F] px-6 py-3 rounded-l-none rounded-sm">Join us today</button>
         </div>
   
-        <div className='flex justify-center md:justify-end md:w-1/2 p-4'>
+        <div className='flex justify-center md:justify-end md:w-1/2'>
           <Image
             src="/child.png"
             alt='design'
             width={941}
             height={694}
+            className='md:max-w-none object-top'
           />
         </div>
       </div>
@@ -74,9 +76,44 @@ export default function Home() {
             </p>
           </div>
           <div className=' justify-center items-center flex flex-row'>
-            <button className="bg-[#17D8E2] text-[#0F0F0F] px-4 py-2 rounded-full">Donate</button>
+            <button className="bg-[#17D8E2] text-[#0F0F0F] px-4 py-2 rounded-full mb-4">Donate</button>
           </div>
       </div>
+
+    <div className=' text-[#000000] font-Poppins min-h-screen flex flex-col '>
+      <Image 
+        src={"/vectorbg.svg"}
+        width={100}
+        height={100}
+        alt='bg'
+        className='w-full'
+      />
+    </div>
+
+    <div className=' text-[#000000] font-Poppins min-h-screen flex flex-col '>
+      <Image 
+        src={"/vectorbg2.svg"}
+        width={100}
+        height={100}
+        alt='bg'
+        className='w-full'
+      />
+    </div>
+
+    <div className=' text-[#000000] font-Poppins min-h-screen flex flex-col relative'>
+  <Image 
+    src={"/vectorbg3.svg"}
+    width={100}
+    height={100}
+    alt='bg'
+    className='w-full'
+  />
+  
+  <div className='absolute inset-0 flex justify-end items-center'>
+    <button className='bg-[#ffffff] text-[#0F0F0F] px-4 py-2 rounded-full mb-4'>Know More</button>
+  </div>
+</div>
+
 
     </div>
     
